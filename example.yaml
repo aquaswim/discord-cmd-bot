@@ -1,0 +1,19 @@
+# idk why i add this
+name: "Discord Command Runner Bot"
+# commands
+commands:
+  - cmd: a  # command to call in discord (%run <a>)
+    run: df # program to run
+    args: # all the program argument goes here
+      - "-H"
+  - cmd: b
+    run: ls
+  - cmd: c
+    run: "sh"
+    args:
+      - "-c"
+      - "ls $HOME | grep D"
+  - cmd: d
+    run: neofetch
+    args:
+      - "-L"
